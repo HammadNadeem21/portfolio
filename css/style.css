@@ -42,7 +42,7 @@ body{
 }
 
 .logo{
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
@@ -57,7 +57,7 @@ body{
 
 /* === Nav-Bar === */
 .navbar a{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
@@ -107,20 +107,26 @@ span{
 .home-content h3{
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 .home-content h1{
-    font-size: 7rem;
+    font-size: 5.5rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
 }
-.home-img img{
-    height: 400px;
-    width: 400px;
+.home-img{
+    /* height: 350px;
+    width: 200px; */
+
+}
+.home-img {
+    background-image: url();
+    height: 380px;
+    width: 250px;
+    top: 6rem;
     border-radius: 50%;
     position: relative;
-    top: 8rem;
     width: 30vw;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -132,7 +138,7 @@ span{
                 0 0 100px var(--main-color);
 }
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
