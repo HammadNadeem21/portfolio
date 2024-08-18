@@ -14,6 +14,12 @@
     --second-bg-color: #101010;
     --text-color: white;
     --main-color: #ea520c;
+    --background: linear-gradient(
+        270deg,
+        #DF8908,
+        #ff1d15
+    );
+    
 }
 
 html{
@@ -48,6 +54,7 @@ body{
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .logo:hover{
     transform: scale(1.1);
 }
@@ -100,9 +107,10 @@ section{
 }
 span{
     color: var(--main-color);
+   
 }
 .logo span{
-    color: var(--main-color);
+     color: var(--main-color); 
 }
 .home-content h3{
     margin-bottom: 2rem;
@@ -272,4 +280,23 @@ span{
     85%{
         width: calc(100% + 8px);
     }
+}
+/* === Home-Section (End) === */
+
+
+/* === About-Section === */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+}
+.about-img{
+    border-radius: 50%;
+}
+.about-img img{
+    border-radius: 50%;
+    width: 30vw;
 }
