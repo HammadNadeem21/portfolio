@@ -14,11 +14,7 @@
     --second-bg-color: #101010;
     --text-color: white;
     --main-color: #ea520c;
-    --background: linear-gradient(
-        270deg,
-        #DF8908,
-        #ff1d15
-    );
+
     
 }
 
@@ -125,10 +121,7 @@ span{
 }
 
 .home-img img{
-    /* background-image: url(H2.jpg); */
-    /* background-size: cover; */
     height: 400px;
-    width: 100px;
     top: 6rem;
     border-radius: 50%;
     position: relative;
@@ -284,7 +277,7 @@ span{
 /* === Home-Section (End) === */
 
 
-/* === About-Section === */
+/* <=== About-Section ===> */
 .about{
     display: flex;
     justify-content: center;
@@ -298,5 +291,66 @@ span{
 }
 .about-img img{
     border-radius: 50%;
+    position: relative;
     width: 30vw;
+    height: 400px;
+    box-shadow: 0 0 25px var(--main-color);
+    top: 6rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
 }
+.about-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+.heading{
+    text-align: center;
+    font-size: 5.5rem;
+    margin: 5rem 0;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1;
+}
+.about-content h3{
+    font-size: 3rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8;
+    margin: 0 0 2rem;
+}
+.about .heading{
+    margin: 0;
+}
+.about-content .text-animation span::before{
+    content: "Web Developer";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+.about-content .text-animation span::after{
+    content: "";
+    background-color: var(--second-bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite; 
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width: 50px;
+}
+/* <=== About-Section (End) ===> */
+
+
+/* <=== Education-Section ===> */
