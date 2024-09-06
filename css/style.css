@@ -434,9 +434,10 @@ span{
 }
 .service-container{
      display: flex;
+     /* right: 109rem; */
      /* align-items: center; */
      /* justify-items: center; */
-     /* margin-left: 25px; */
+     margin-left: -25px;
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -645,13 +646,14 @@ span{
         right: 0;
         width: 50%;
         padding: 1rem 3%;
-        background: var(--bg-color);
+        background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
         display: none;
     }
+    
     .navbar .active{
         display: block;
     }
