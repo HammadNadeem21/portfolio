@@ -1,5 +1,7 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+let header = document.querySelector(".header");
+let closeIcon = document.querySelector("#close-icon");
 // let sections =document.querySelectorAll('section');
 // let navLinks = document.querySelectorAll('header nav a');
 
@@ -25,9 +27,35 @@ let navbar = document.querySelector('.navbar');
 
 
 menuIcon.onclick = () =>{
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
+   
+ }
+
+//  let changeIcon = (icon)=>{
+//     icon.classList.toggle("fa-xmark");
+//  }
+
+menuIcon.addEventListener('click', function(){
+
+    if(navbar.style.display === "none"){
+        navbar.style.display = "block";
+        // menuIcon.style.display = "none";
+        
+        // menuIcon.style.display = "none";
+        // closeIcon.style.display = "block";
+        // navbar.classList.toggle('active');
+
+    }else{
+        navbar.style.display = "none";
+       
+
+
+    // menuIcon.classList.toggle('bx-x');
+
+
+    }
+
+
+});
 
 // let menuIcon = document.querySelector('#menu-icon');
 // let navbar = document.querySelector('.navbar');
