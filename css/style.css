@@ -140,7 +140,7 @@ span {
 
 .home-img img {
     height: 400px;
-    width: 100px;
+    /* width: 100px; */
     top: 6rem;
     border-radius: 50%;
     position: relative;
@@ -335,8 +335,8 @@ span {
 .about-img img {
     border-radius: 50%;
     position: relative;
-    width: 500px;
-    height: 100%;
+    width: 400px;
+    height: 400px;
     box-shadow: 0 0 25px var(--main-color);
     top: 6rem;
     cursor: pointer;
